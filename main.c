@@ -1,6 +1,6 @@
 #include "hsh.h"
 /**
- * main - super simple shell
+ * main - command line interpreter
  * @argc: number of arguments
  * @argv: array of arguments
  *

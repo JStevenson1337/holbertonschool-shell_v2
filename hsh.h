@@ -3,5 +3,8 @@
 
 #include <stdio.h>
 #include <unistd.h>
+#include <string.h>
+#include <stdarg.h>
+
 
 #endif /* __HSH_H__ */

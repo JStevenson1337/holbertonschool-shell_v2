@@ -1,6 +1,8 @@
 make --dry-run --keep-going --print-directory
 make: Entering directory '/home/jeremy/Projects/Holberton/shell_v2'
+gcc -Wall -Werror -Wextra -pedantic   -c -o hsh.o hsh.c
+gcc -Wall -Werror -Wextra -pedantic   -c -o main.o main.c
+gcc -Wall -Werror -Wextra -pedantic   -c -o mypid.o mypid.c
+gcc -Wall -Werror -Wextra -pedantic -o hsh hsh.o main.o mypid.o
 make: Leaving directory '/home/jeremy/Projects/Holberton/shell_v2'
  
-make: *** No targets.  Stop.
-
