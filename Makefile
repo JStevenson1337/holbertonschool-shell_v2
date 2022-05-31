@@ -10,7 +10,7 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 # Linker flags
 #
 LDFLAGS = -lm
-DEPS = hsh.h
+DEPS = shell.h
 CSRCS = $(wildcard *.c)
 OBJSDIR = ./build/
 OBJS = $(CSRCS:.c=.o)

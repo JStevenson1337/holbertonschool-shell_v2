@@ -9,3 +9,51 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	5.9.0	//
+${TARGET}	Makefile	/^${TARGET}: ${OBJS}$/;"	t
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Wall -Werror -Wextra -pedantic$/;"	m
+CSRCS	Makefile	/^CSRCS = $(wildcard *.c)$/;"	m
+DBGCFLAGS	Makefile	/^DBGCFLAGS = -g -O0 -DDEBUG$/;"	m
+DELIM	shell.h	/^#define DELIM /;"	d
+DEPS	Makefile	/^DEPS = hsh.h$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS = -lm$/;"	m
+OBJS	Makefile	/^OBJS = $(CSRCS:.c=.o)$/;"	m
+OBJSDIR	Makefile	/^OBJSDIR = .\/build\/$/;"	m
+SHELL_H	shell.h	/^#define SHELL_H$/;"	d
+TARGET	Makefile	/^TARGET = hsh$/;"	m
+__error	error.c	/^void __error(char **args, char *cmd, int code, int n)$/;"	f	typeref:typename:void
+_environ	_environ.c	/^path_t *_environ(void)$/;"	f	typeref:typename:path_t *
+_getenv	env_func.c	/^char *_getenv(char *name)$/;"	f	typeref:typename:char *
+_itoa	itoa.c	/^char *_itoa(int num)$/;"	f	typeref:typename:char *
+_numlen	itoa.c	/^int _numlen(int n)$/;"	f	typeref:typename:int
+_strcmp	strings.c	/^int _strcmp(char *s1, char *s2)$/;"	f	typeref:typename:int
+_strcpy	strings.c	/^char *_strcpy(char *dest, char *src)$/;"	f	typeref:typename:char *
+_strdup	strings.c	/^char *_strdup(char *str)$/;"	f	typeref:typename:char *
+_strlen	strings.c	/^int _strlen(char *s)$/;"	f	typeref:typename:int
+all	Makefile	/^all: ${TARGET}$/;"	t
+cd	builtin_func.c	/^int cd(char **command)$/;"	f	typeref:typename:int
+check_builtin	check_builtin.c	/^int check_builtin(char **args, char *line)$/;"	f	typeref:typename:int
+check_command	execute.c	/^int check_command(char **args, char *program, int n)$/;"	f	typeref:typename:int
+check_path	check_path.c	/^char *check_path(path_t *head, char *command)$/;"	f	typeref:typename:char *
+clean	Makefile	/^clean:$/;"	t
+clear_screen	shell.c	/^char clear_screen(void)$/;"	f	typeref:typename:char
+debug	Makefile	/^debug:$/;"	t
+dir	shell.h	/^	char *dir;$/;"	m	struct:path	typeref:typename:char *
+env	shell.h	/^path_t *env;$/;"	v	typeref:typename:path_t *
+execute	execute.c	/^int execute(char **args, char *program, int n)$/;"	f	typeref:typename:int
+free_path	make_path.c	/^void free_path(path_t *head)$/;"	f	typeref:typename:void
+hsh_exit	builtin_func.c	/^void hsh_exit(char **args, char *line)$/;"	f	typeref:typename:void
+main	hsh.c	/^int main(int argc, char **argv)$/;"	f	typeref:typename:int
+main_path	shell.h	/^path_t *main_path;$/;"	v	typeref:typename:path_t *
+make_path	make_path.c	/^path_t *make_path(void)$/;"	f	typeref:typename:path_t *
+next	shell.h	/^	struct path *next;$/;"	m	struct:path	typeref:struct:path *
+path	shell.h	/^typedef struct path$/;"	s
+path_concat	strings.c	/^char *path_concat(char *s1, char *s2)$/;"	f	typeref:typename:char *
+path_t	shell.h	/^} path_t;$/;"	t	typeref:struct:path
+print_env	builtin_func.c	/^void print_env(void)$/;"	f	typeref:typename:void
+prompt	shell.c	/^void prompt(char *program)$/;"	f	typeref:typename:void
+prompter	shell.c	/^void prompter(void)$/;"	f	typeref:typename:void
+read_line	shell.c	/^char *read_line(void)$/;"	f	typeref:typename:char *
+signal_handler	execute.c	/^void signal_handler (int sig)$/;"	f	typeref:typename:void
+tokenize	tokenize.c	/^char **tokenize(char *buffer, char *delim)$/;"	f	typeref:typename:char **
+word_count	tokenize.c	/^int word_count(char *s)$/;"	f	typeref:typename:int
