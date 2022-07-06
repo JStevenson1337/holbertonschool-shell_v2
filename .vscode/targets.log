@@ -1,263 +1,305 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-# GNU Make 4.2.1
+# GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
-# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
+ 
+Makefile:51: warning: overriding recipe for target 'oclean'
+Makefile:42: warning: ignoring old recipe for target 'oclean'
+Makefile:54: warning: overriding recipe for target 'clean'
+Makefile:48: warning: ignoring old recipe for target 'clean'
+Makefile:62: warning: overriding recipe for target 'oclean'
+Makefile:51: warning: ignoring old recipe for target 'oclean'
+Makefile:65: warning: overriding recipe for target 'clean'
+Makefile:54: warning: ignoring old recipe for target 'clean'
+make: *** No rule to make target '_environ.o', needed by 'hsh'.  Stop.
+
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jun  3 13:11:04 2022
+# Make data base, printed on Wed Jul  6 00:30:57 2022
 
 # Variables
 
-# 'override' directive
-GNUMAKEFLAGS := 
-# automatic
-<D = $(patsubst %/,%,$(dir $<))
-# automatic
-?F = $(notdir $?)
 # environment
-DESKTOP_SESSION = pop
-# default
-.SHELLFLAGS := -c
+TMUX_PANE = %0
 # environment
-XDG_SESSION_CLASS = user
+GDK_BACKEND = x11
 # environment
-XDG_SESSION_TYPE = x11
+LC_ALL = C
 # environment
-VSCODE_LOG_NATIVE = false
-# makefile (from 'Makefile', line 17)
-TARGET = hsh
+NO_AT_BRIDGE = 1
 # environment
-ZSH_TMUX_TERM = screen-256color
-# automatic
-?D = $(patsubst %/,%,$(dir $?))
-# automatic
-@D = $(patsubst %/,%,$(dir $@))
+GNOME_SHELL_SESSION_MODE = pop
 # environment
-XAUTHORITY = /run/user/1000/gdm/Xauthority
+SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
-GDMSESSION = pop
+TERMINATOR_DBUS_NAME = net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f
 # environment
-XMODIFIERS = @im=ibus
-# makefile
-CURDIR := /home/jeremy/Projects/Holberton/shell_v2
-# makefile
-SHELL = /bin/sh
-# environment
-VTE_VERSION = 6003
-# environment
-VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
-# environment
-JOURNAL_STREAM = 8:70786
-# makefile (from 'Makefile', line 7)
-CFLAGS = -Wall -Werror -Wextra -pedantic
-# environment
-XDG_CONFIG_DIRS = /etc/xdg/xdg-pop:/etc/xdg
-# makefile (from 'Makefile', line 1)
-MAKEFILE_LIST :=  Makefile
-# automatic
-@F = $(notdir $@)
-# environment
-IM_CONFIG_PHASE = 1
-# environment
-USERNAME = jeremy
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-92e85a53-15f0-41a9-ab3c-0cb970786d99.sock
 # environment
 MANDATORY_PATH = /usr/share/gconf/pop.mandatory.path
 # environment
-XDG_DATA_DIRS = /usr/share/pop:/home/jeremy/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
-# makefile (from 'Makefile', line 31)
-DBGCFLAGS = -g -O0 -DDEBUG
-# environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
-# environment
-VSCODE_VERBOSE_LOGGING = true
-# environment
-_ = /usr/bin/code
-# makefile (from 'Makefile', line 16)
-OBJS = $(CSRCS:.c=.o)
-# environment
-MANAGERPID = 3933
-# environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-35d8f363-7801-45eb-8ad6-6829a1220000.sock
-# environment
 VSCODE_CWD = /home/jeremy/Projects/Holberton/shell_v2
+# environment
+WINDOWPATH = 2
+# environment
+NVIM_LOG_FILE = /home/jeremy/.cache/nvim/log
+# environment
+TERMINATOR_UUID = urn:uuid:b9495b88-48ce-4122-a17f-112b1b64f271
+# environment
+LIBVIRT_DEFAULT_URI = qemu:///system
 # default
-MAKE_HOST := x86_64-pc-linux-gnu
+MAKE_COMMAND := make
 # environment
-PATH = /home/jeremy/.cargo/bin:/home/jeremy/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jeremy/.local/bin:/home/jeremy/.local/bin
+QT_ACCESSIBILITY = 1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
 # environment
-GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+MYVIMRC = /home/jeremy/.config/nvim/init.vim
+# makefile (from 'Makefile', line 17)
+CSRCS = $(wildcard *.c)
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/jeremy/Projects/Holberton/shell_v2
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
-SESSION_MANAGER = local/blitzar:@/tmp/.ICE-unix/4268,unix/blitzar:/tmp/.ICE-unix/4268
-# makefile (from 'Makefile', line 14)
-CSRCS = $(wildcard *.c)
+XDG_DATA_DIRS = /usr/share/pop:/usr/share/gnome:/home/jeremy/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # environment
-XDG_RUNTIME_DIR = /run/user/1000
-# environment
-XDG_MENU_PREFIX = gnome-
+OLDPWD = /home/jeremy/Projects/Holberton/shell_v2
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
 # environment
 VSCODE_LOG_STACK = false
-# environment
-ELECTRON_RUN_AS_NODE = 1
-# environment
-INVOCATION_ID = 9813f6b7cd214c66bfe2f18c97e7f45e
-# makefile (from 'Makefile', line 12)
-LDFLAGS = -lm
-# default
-.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
-# environment
-ELECTRON_NO_ATTACH_CONSOLE = 1
-# environment
-LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
-# environment
-XDG_SESSION_DESKTOP = pop
-# environment
-SSH_AUTH_SOCK = /tmp/ssh-PMx1aMS7DvLx/agent.6744
 # automatic
 %F = $(notdir $%)
 # environment
-DISPLAY = :1
+VSCODE_CODE_CACHE_PATH = /home/jeremy/.config/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
 # environment
-ZSH_TMUX_CONFIG = /home/jeremy/.tmux.conf
+LANG = C
 # environment
-TMUX_PANE = %5
+XAUTHORITY = /run/user/1000/gdm/Xauthority
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# environment
+TERMINATOR_DBUS_PATH = /net/tenshu/Terminator2
+# makefile
+CURDIR := /home/jeremy/Projects/Holberton/shell_v2
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+ZSH_TMUX_TERM = screen-256color
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /tmp/ssh-XXXXXXa8ZTju/agent.137208
+# default
+.SHELLFLAGS := -c
+# environment
 _ZSH_TMUX_FIXED_CONFIG = /home/jeremy/.oh-my-zsh/plugins/tmux/tmux.extra.conf
 # environment
-PWD = /home/jeremy/Projects/Holberton/shell_v2
-# default
-.LOADED := 
+XDG_CONFIG_DIRS = /etc/xdg/xdg-pop:/etc/xdg
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from 'Makefile', line 34)
+DBGCFLAGS = -g -O0 -DDEBUG -Wall -Werror -Wextra -pedantic
 # environment
-SSH_AGENT_PID = 6746
+XDG_SESSION_DESKTOP = pop
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+ZSH = /home/jeremy/.oh-my-zsh
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 234093
+# environment
+XDG_SESSION_TYPE = x11
+# environment
+TMUX = /tmp/tmux-1000/default,137881,0
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+SESSION_MANAGER = local/dt1:@/tmp/.ICE-unix/5030,unix/dt1:/tmp/.ICE-unix/5030
+# environment
+MARKPATH = /home/jeremy/.marks
+# automatic
+*F = $(notdir $*)
+# makefile (from 'Makefile', line 18)
+OBJSDIR = ./build/
+# environment
+ANT_ARGS = -logger org.apache.tools.ant.listener.AnsiColorLogger
+# environment
+IBUS_DISABLE_SNOOPER = 1
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VIMRUNTIME = /usr/share/nvim/runtime
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile (from 'Makefile', line 19)
+OBJS = $(CSRCS:.c=.o)
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+XMODIFIERS = @im=ibus
+# environment
+SHLVL = 3
+# environment
+MAKELEVEL := 0
+# environment
+ZSH_TMUX_CONFIG = /home/jeremy/.tmux.conf
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /home/jeremy/.cargo/bin:/home/jeremy/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/jeremy/.local/bin:/home/jeremy/.fzf/bin:/home/jeremy/.local/bin:/home/jeremy/.local/bin
+# default
+MAKEFILES := 
+# automatic
+^F = $(notdir $^)
+# environment
+NVIM_LISTEN_ADDRESS = /tmp/nvimE0hAag/0
+# environment
+INVOCATION_ID = 7202d681747a4bcab5bcd1a834f71ef8
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+USERNAME = jeremy
+# environment
+TERM_PROGRAM = tmux
+# automatic
+?F = $(notdir $?)
+# environment
+VIM = /usr/share/nvim
+# environment
+GTK_IM_MODULE = ibus
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+# automatic
++F = $(notdir $+)
+# environment
+LESS = -R
+# environment
+DESKTOP_SESSION = pop
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = pop:GNOME
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = jeremy
+# makefile
+.DEFAULT_GOAL := hsh
+# environment
+SYSTEMD_EXEC_PID = 5356
+# makefile (from 'Makefile', line 21)
+RM = rm -f
+# environment
+DISPLAY = :1
+# environment
+USER = jeremy
 # environment
 GTK_MODULES = gail:atk-bridge:appmenu-gtk-module
+# environment
+DEFAULTS_PATH = /usr/share/gconf/pop.default.path
+# default
+MAKE_VERSION := 4.3
+# environment
+COC_DATA_HOME = /home/jeremy/.config/coc
+# makefile (from 'Makefile', line 15)
+LDFLAGS = -lm
+# environment
+MANAGERPID = 4739
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 137127
+# environment
+SSH_AGENT_PID = 137210
+# environment
+PAGER = less
+# environment
+_ = /usr/bin/code
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# makefile (from 'Makefile', line 10)
+CFLAGS = -Wall -Werror -Wextra -pedantic
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# environment
+COLORTERM = 256
+# environment
+COC_VIMCONFIG = /home/jeremy/.config/nvim
+# environment
+JOURNAL_STREAM = 8:69002
+# environment
+XDG_SESSION_CLASS = user
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 HOME = /home/jeremy
 # environment
-VSCODE_CLI = 1
-# environment
-VSCODE_CODE_CACHE_PATH = /home/jeremy/.config/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
-# environment
-LOGNAME = jeremy
-# environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
-# environment
-ZSH = /home/jeremy/.oh-my-zsh
-# environment
-VSCODE_HANDLES_UNCAUGHT_ERRORS = true
-# environment
-GNOME_DESKTOP_SESSION_ID = this-is-deprecated
-# automatic
-^D = $(patsubst %/,%,$(dir $^))
-# environment
-ANT_ARGS = -logger org.apache.tools.ant.listener.AnsiColorLogger
-# makefile (from 'Makefile', line 15)
-OBJSDIR = ./build/
-# environment
-MAKELEVEL := 0
-# environment
-COLORTERM = truecolor
-# default
-MAKE = $(MAKE_COMMAND)
-# default
-MAKECMDGOALS := all
-# environment
 QT_IM_MODULE = ibus
 # environment
-SHLVL = 2
-# makefile (from 'Makefile', line 6)
-CC = gcc
+ELECTRON_RUN_AS_NODE = 1
 # environment
-GNOME_SHELL_SESSION_MODE = pop
-# default
-MAKE_VERSION := 4.2.1
+VSCODE_IPC_HOOK = /run/user/1000/vscode-13c5c0cd-1.68.1-main.sock
 # environment
-USER = jeremy
-# makefile
-.DEFAULT_GOAL := hsh
-# environment
-XDG_CURRENT_DESKTOP = Unity
-# environment
-LIBVIRT_DEFAULT_URI = qemu:///system
-# environment
-LESS = -R
-# automatic
-%D = $(patsubst %/,%,$(dir $%))
-# default
-MAKE_COMMAND := make
-# environment
-OLDPWD = /home/jeremy/Projects/Holberton
-# default
-.VARIABLES := 
-# automatic
-*F = $(notdir $*)
-# environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-13c5c0cd-1.67.2-main.sock
-# makefile
-MAKEFLAGS = pqrR
-# environment
-MARKPATH = /home/jeremy/.marks
-# environment
-MFLAGS = -pqrR
-# automatic
-*D = $(patsubst %/,%,$(dir $*))
-# automatic
-+D = $(patsubst %/,%,$(dir $+))
-# environment
-TMUX = /tmp//tmux-1000/default,9983,0
-# environment
-GDK_BACKEND = x11
-# automatic
-+F = $(notdir $+)
-# environment
-NO_AT_BRIDGE = 1
-# environment
-QT_ACCESSIBILITY = 1
-# environment
-DEFAULTS_PATH = /usr/share/gconf/pop.default.path
-# default
-MAKEFILES := 
-# automatic
-<F = $(notdir $<)
-# environment
-PAGER = less
-# environment
-LC_ALL = C
-# environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/aebc9a99_8a2b_48be_b00d_81e476b653f9
-# automatic
-^F = $(notdir $^)
-# makefile (from 'Makefile', line 13)
-DEPS = shell.h
-# environment
-GNOME_TERMINAL_SERVICE = :1.112
-# default
-SUFFIXES := 
-# environment
-CHROME_DESKTOP = code-url-handler.desktop
-# environment
-WINDOWPATH = 2
-# default
-.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+TERM = xterm-256color
 # default
 .RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# makefile (from 'Makefile', line 16)
+DEPS = shell.h
+# default
+SUFFIXES := 
+# makefile (from 'Makefile', line 20)
+TARGET = hsh
 # environment
-LANG = C
+VSCODE_CLI = 1
 # environment
-TERM = tmux-256color
+ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
-VSCODE_PID = 32307
+VTE_VERSION = 6800
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# makefile (from 'Makefile', line 9)
+CC = gcc
+ 
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+TERM_PROGRAM_VERSION = 3.2a
+# environment
+GDMSESSION = pop
 # variable set hash-table stats:
-# Load=123/1024=12%, Rehash=0, Collisions=20/152=13%
+# Load=138/1024=13%, Rehash=0, Collisions=11/173=6%
 
 # Pattern-specific Variable Values
 
@@ -265,9 +307,9 @@ VSCODE_PID = 32307
 
 # Directories
 
-# . (device 64769, inode 1587958): 40 files, no impossibilities.
+# . (device 2051, inode 16386038): 30 files, no impossibilities.
 
-# 40 files, no impossibilities in 1 directories.
+# 30 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -275,29 +317,97 @@ VSCODE_PID = 32307
 
 # Files
 
+hsh: _environ.o builtin_func.o check_builtin.o check_path.o env_func.o error.o execute.o hsh.o itoa.o make_path.o shell.o strings.o tokenize.o
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-05 19:23:05.199921525
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 24):
+	${CC} ${CFLAGS} -o ${TARGET} ${OBJS}
+
 all,:
- 
 #  Phony target (prerequisite of .PHONY).
- 
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
 
-all: hsh
-#  Command line target.
+debug:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 36):
+	gcc ${DBGCFLAGS} ${FLAGS} -o ${TARGET} ${CSRCS} ${DEPS}
+
+# Not a target:
+Makefile:
 #  Implicit rule search has been done.
-#  File does not exist.
+#  Last modified 2022-06-06 01:48:27.733195298
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
-shell.o:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-03 13:09:20.359359278
-#  File has been updated.
-#  Successfully updated.
+execute.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
-.PHONY: all, debug, clean
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 65):
+	$(RM) *~ $(NAME)
+
+# Not a target:
+error.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+env_func.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+re: oclean all
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+_environ.o:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+oclean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 62):
+	$(RM) $(OBJ)
+
+# Not a target:
+hsh.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+make_path.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+check_builtin.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -308,128 +418,62 @@ debug,:
 #  File does not exist.
 #  File has not been updated.
 
-# Not a target:
-tokenize.o:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-03 13:09:20.20736883
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
-Makefile:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-03 13:07:09.081457339
-#  File has been updated.
-#  Successfully updated.
-
-debug:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 33):
-	gcc ${DBGCFLAGS} ${FLAGS} -o ${TARGET} ${CSRCS} ${DEPS}
-
-# Not a target:
-builtin_func.o:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-03 13:09:20.52734872
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
-_environ.o:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-03 13:09:20.32336154
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
-error.o:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-03 13:09:20.251366065
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
-execute.o:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-03 13:09:20.495350731
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
-make_path.o:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-03 13:09:20.287363802
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
-check_builtin.o:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-03 13:09:20.167371343
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
-.DEFAULT:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-hsh: check_builtin.o tokenize.o error.o make_path.o _environ.o shell.o check_path.o env_func.o itoa.o execute.o hsh.o builtin_func.o strings.o
-#  Implicit rule search has not been done.
-#  Last modified 2022-06-03 13:09:20.619342939
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 21):
-	${CC} ${CFLAGS} -o ${TARGET} ${OBJS}
-
-# Not a target:
-hsh.o:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-03 13:09:20.563346457
-#  File has been updated.
-#  Successfully updated.
-
-clean:
-#  Phony target (prerequisite of .PHONY).
+all: hsh
+#  Command line target.
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 36):
-	rm -f ${TARGET} ${OBJS}
+#  recipe to execute (from 'Makefile', line 57):
+	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+
+fclean: oclean clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+tokenize.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+shell.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+builtin_func.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 check_path.o:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-03 13:09:20.391357267
-#  File has been updated.
-#  Successfully updated.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: all, debug, clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 strings.o:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-03 13:09:20.599344195
-#  File has been updated.
-#  Successfully updated.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 itoa.o:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-03 13:09:20.459352993
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
-env_func.o:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-03 13:09:20.423355256
-#  File has been updated.
-#  Successfully updated.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # files hash-table stats:
-# Load=23/1024=2%, Rehash=0, Collisions=0/52=0%
+# Load=26/1024=3%, Rehash=0, Collisions=1/64=2%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
@@ -437,12 +481,12 @@ env_func.o:
 # No general ('VPATH' variable) search path.
 
  
-# strcache buffers: 1 (0) / strings = 50 / storage = 475 B / avg = 9 B
-# current buf: size = 8162 B / used = 475 B / count = 50 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 56 / storage = 532 B / avg = 9 B
+# current buf: size = 8162 B / used = 532 B / count = 56 / avg = 9 B
 
-# strcache performance: lookups = 76 / hit rate = 34%
+# strcache performance: lookups = 86 / hit rate = 34%
 # hash-table stats:
-# Load=50/8192=1%, Rehash=0, Collisions=1/76=1%
-# Finished Make data base on Fri Jun  3 13:11:04 2022
+# Load=56/8192=1%, Rehash=0, Collisions=0/86=0%
+# Finished Make data base on Wed Jul  6 00:30:57 2022
 
  
