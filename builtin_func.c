@@ -47,8 +47,8 @@ void print_env(void)
 	}
 }
 /**
- * cd - changes directory
- * @command: directory to change to
+ * cd - changes directoryi
+ * @command: Direcotry to change to
  *
  * Return: 0
  */

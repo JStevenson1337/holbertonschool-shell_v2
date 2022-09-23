@@ -8,7 +8,7 @@ This simple shell was complied and tested on Ubuntu 20.04 LTS
 
 ## TO RUN:
 Clone this repo:
-```git clone "git@github.com:JStevenson1337/shell_v2.git"```
+```git clone "https://github.com/TimSimms84/simple_shell.git"```
 
 Compile:
 ```gcc -Wall -Werror -Wextra -pedantic *.c -o hsh```
@@ -93,3 +93,4 @@ drwxrwxr-x  8 tim tim  4096 Dec  1 14:39 .git
 
 ## Authors
 Jeremy Stevenson
+Tim Simms
