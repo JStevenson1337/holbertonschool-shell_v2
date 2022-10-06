@@ -81,15 +81,17 @@ extern hsh_t *shell;
 #define ERR_GET_COMMAND_TO_BIG	-2
 #define ERR_GET_COMMAND_MEMORY	-3
 
-
 /* Function Prototypes */
-/* GETLINE */
 
+
+/* GETLINE */
 fd_t *get_fd(fd_t **head, int fd);
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 char *flush_buffer(char *line, size_t *pos, size_t *size, size_t need, fd_t *desc);
 char *read_descriptor(fd_t *desc);
 char *_getline(const int fd);
+/* END GETLINE */
+
 
 char *_strcpy(char *dest, char *src);
 int _strlen(char *s);
