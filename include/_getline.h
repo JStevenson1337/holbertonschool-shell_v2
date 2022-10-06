@@ -30,4 +30,3 @@ typedef struct fd_s
 char *_getline(const int fd);
 char *strsrch(char *s, char c, size_t len);
 #endif /* GETLINE_H */
-

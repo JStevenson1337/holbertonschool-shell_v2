@@ -1,6 +1,9 @@
 #ifndef __SHELL_H__
 #define __SHELL_H__
-#define DELIM " \n\a\t"
+#define __GETLINE_H__
+
+
+#define DELIM " \t\a\v\r\f"
 
 
 /* Libraries */
@@ -12,22 +15,81 @@
 #include <sys/stat.h>
 #include <string.h>
 
-/* Path Structure */
-/**
- * struct path - path node struct
- * @dir: string containing directory
- * @next: pointer to next node.
- */
-typedef struct path
+#include "_getline.h"
+
+
+#define SHELL_NAME "hsh"
+#define SHELL_VERSION "2.0"
+
+#define UNUSED(x) (void)x
+
+
+#define COMMAND_GET_MAXIMUM_CMD_SIZE	(4096*4096)
+
+#define ENV_BUFFER_SIZE 1024
+#define LINE_BUFFER_SIZE 4096
+
+typedef struct env_s
 {
-	char *dir;
-	struct path *next;
-} path_t;
+	struct env_s *next;
+	struct env_s *prev;
+	char *key;
+	char *value;
+} env_t;
 
-extern char **environ;
+typedef struct input_string_s
+{
+	char *cmd;
+	char **args;
+	char *input;
+	char *output;
+	int input_fd;
+	int output_fd;
+	int append;
+	int background;
+} input_string_t;
 
-path_t *main_path;
-path_t *env;
+typedef struct hsh_h
+{
+	char *name;
+	char *version;
+	char *line;
+	char **tokens;
+	char *input;
+	char *output;
+	int input_fd;
+	int output_fd;
+	int append;
+	int background;
+	int exit;
+	int status;
+	int interactive;
+	int argc;
+	char **argv;
+	char **env;
+	env_t *env_list;
+} hsh_t;
+
+extern hsh_t *shell;
+
+
+
+#define OK 1
+
+#define ERR_GET_COMMAND_EOF	0
+#define ERR_GET_COMMAND_READ	-1
+#define ERR_GET_COMMAND_TO_BIG	-2
+#define ERR_GET_COMMAND_MEMORY	-3
+
+
+/* Function Prototypes */
+/* GETLINE */
+
+fd_t *get_fd(fd_t **head, int fd);
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
+char *flush_buffer(char *line, size_t *pos, size_t *size, size_t need, fd_t *desc);
+char *read_descriptor(fd_t *desc);
+char *_getline(const int fd);
 
 char *_strcpy(char *dest, char *src);
 int _strlen(char *s);

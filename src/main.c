@@ -17,6 +17,10 @@ int main(int argc, char **argv, char **env)
 	(void)env;
 	while (status)
 	{
+		if (argc > 1)
+			line = argv[1];
+		else
+			line = _getline();
 		/* print prompt */
 		prompter();
 
