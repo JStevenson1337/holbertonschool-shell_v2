@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "../include/shell.h"
 /**
  * _strcpy - copies string from one pointer to a new pointer
  * @dest: the destination pointer for the copied string

@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "../include/shell.h"
 /**
  * _getenv - searches environment list for variable name
  * @name: name of the variable

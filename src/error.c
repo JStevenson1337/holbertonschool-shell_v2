@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "../include/shell.h"
 /**
  * __error - handle all error
  * @args: arguments passed in

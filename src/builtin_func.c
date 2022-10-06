@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "../include/shell.h"
 
 
 /**
@@ -47,7 +47,7 @@ void print_env(void)
 	}
 }
 /**
- * cd - changes directoryi
+ * cd - changes directory
  * @command: Direcotry to change to
  *
  * Return: 0

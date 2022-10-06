@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "../include/shell.h"
 /**
  * prompt - shell loop
  * @program: name of shell

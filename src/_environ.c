@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "../include/shell.h"
 /**
  * _environ - builds an environment linked list
  *

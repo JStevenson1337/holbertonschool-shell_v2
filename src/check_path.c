@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "../include/shell.h"
 /**
  * check_path - checks path
  * @head: head of PATH linked list

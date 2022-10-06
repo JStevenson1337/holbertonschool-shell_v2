@@ -1,5 +1,5 @@
-#ifndef SHELL_H
-#define SHELL_H
+#ifndef __SHELL_H__
+#define __SHELL_H__
 #define DELIM " \n\a\t"
 
 
@@ -73,7 +73,8 @@ int unsetenv_builtin(char **args, char *line);
 int cd_builtin(char **args, char *line);
 
 
-
+char *_memset(char *s, char b, unsigned int n);
+char *_memcpy(char *dest, char *src, unsigned int n);
 
 
 #endif /* SHELL_H */
