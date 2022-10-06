@@ -18,9 +18,7 @@ int main(int argc, char **argv, char **env)
 	while (status)
 	{
 		if (argc > 1)
-			line = argv[1];
-		else
-			line = _getline();
+			__error(args, argv[0], 2, 0);
 		/* print prompt */
 		prompter();
 

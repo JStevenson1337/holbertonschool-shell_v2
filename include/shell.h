@@ -29,6 +29,29 @@
 #define ENV_BUFFER_SIZE 1024
 #define LINE_BUFFER_SIZE 4096
 
+
+/* Path Structure */
+/**
+ * struct path - path node struct
+ * @dir: string containing directory
+ * @next: pointer to next node.
+ */
+typedef struct path
+{
+	char *dir;
+	struct path *next;
+} path_t;
+
+
+
+typedef struct node_contructor_s
+{
+	char list_s;
+	struct node_contructor_s *next;
+	struct node_contructor_s *prev;
+} node_contructor_t;
+
+
 typedef struct env_s
 {
 	struct env_s *next;

@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <signal.h>
+#include <string.h>
+
 
 void handle_sigtstp(int sig)
 {
@@ -38,4 +40,3 @@ int main(int argc, char *argv[])
 	printf("number is: %d * 5 = %d\n", x, x * 5);
 	return (0);
 }
-

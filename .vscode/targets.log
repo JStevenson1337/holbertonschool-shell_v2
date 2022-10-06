@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Oct  5 16:28:34 2022
+# Make data base, printed on Thu Oct  6 11:53:59 2022
 
 # Variables
 
@@ -15,21 +15,23 @@ GDK_BACKEND = x11
 # environment
 LC_ALL = C
 # environment
-NO_AT_BRIDGE = 1
-# environment
 GNOME_SHELL_SESSION_MODE = pop
 # environment
 SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
 TERMINATOR_DBUS_NAME = net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f
+# makefile (from 'Makefile', line 2)
+VPATH = src
 # environment
 MANDATORY_PATH = /usr/share/gconf/pop.mandatory.path
+# makefile (from 'Makefile', line 17)
+SRC_DIR = src/
 # environment
 VSCODE_CWD = /home/jeremy/Projects/Holberton/holbertonschool-shell_v2
 # environment
 WINDOWPATH = 2
 # environment
-TERMINATOR_UUID = urn:uuid:1afcd2cc-04a8-4949-aa89-55bcbf385d4d
+TERMINATOR_UUID = urn:uuid:51814e81-25d2-49be-b71d-10407e25a3a3
 # environment
 LIBVIRT_DEFAULT_URI = qemu:///system
 # default
@@ -81,7 +83,7 @@ ZSH_TMUX_TERM = screen-256color
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_AUTH_SOCK = /tmp/ssh-XXXXXX538bYs/agent.13725
+SSH_AUTH_SOCK = /tmp/ssh-XXXXXX3kAOed/agent.35530
 # default
 .SHELLFLAGS := -c
 # environment
@@ -99,13 +101,13 @@ MAKEFILE_LIST := Makefile
 # environment
 ZSH = /home/jeremy/.oh-my-zsh
 # environment
-VSCODE_PID = 13944
+VSCODE_PID = 35693
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/parallax:@/tmp/.ICE-unix/3837,unix/parallax:/tmp/.ICE-unix/3837
+SESSION_MANAGER = local/parallax:@/tmp/.ICE-unix/3857,unix/parallax:/tmp/.ICE-unix/3857
 # environment
 MARKPATH = /home/jeremy/.marks
 # automatic
@@ -124,8 +126,8 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
-# makefile (from 'Makefile', line 12)
-OBJS = $(SRCS:%.c=$(BUILD_DIR)/%.o)
+# makefile (from 'Makefile', line 20)
+OBJS = $(patsubst %.c, $(OBJS_DIR)/%$(ARCH)$(DEBUG).o, $(notdir $(wildcard $(SRC_DIR)/*.c)))
 # environment
 GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 # makefile
@@ -149,7 +151,7 @@ MAKEFILES :=
 # automatic
 ^F = $(notdir $^)
 # environment
-INVOCATION_ID = 112d40b8a2184a3c8ba766a24f520268
+INVOCATION_ID = 344c0320c3c446289c35b6692cd80f5e
 # environment
 USERNAME = jeremy
 # automatic
@@ -175,7 +177,7 @@ LOGNAME = jeremy
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 4052
+SYSTEMD_EXEC_PID = 4161
 # makefile (from 'Makefile', line 15)
 RM = rm -f
 # environment
@@ -189,13 +191,15 @@ DEFAULTS_PATH = /usr/share/gconf/pop.default.path
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 3627
+MANAGERPID = 3633
 # environment
 NODE_TLS_REJECT_UNAUTHORIZED = 0
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 13541
+GIO_LAUNCHED_DESKTOP_FILE_PID = 35456
+# makefile (from 'Makefile', line 18)
+OBJS_DIR = lib/
 # environment
-SSH_AGENT_PID = 13727
+SSH_AGENT_PID = 35532
 # environment
 PAGER = less
 # environment
@@ -209,7 +213,7 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 COLORTERM = truecolor
 # environment
-JOURNAL_STREAM = 8:56149
+JOURNAL_STREAM = 8:58195
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -249,7 +253,7 @@ XDG_MENU_PREFIX = gnome-
 # environment
 GDMSESSION = pop
 # variable set hash-table stats:
-# Load=119/1024=12%, Rehash=0, Collisions=11/157=7%
+# Load=121/1024=12%, Rehash=0, Collisions=9/165=5%
 
 # Pattern-specific Variable Values
 
@@ -257,48 +261,148 @@ GDMSESSION = pop
 
 # Directories
 
-# . (device 2049, inode 19661714): 21 files, no impossibilities.
+# src (device 2049, inode 21498371): 24 files, no impossibilities.
+# . (device 2049, inode 19661714): 22 files, no impossibilities.
+# src/ (device 2049, inode 21498371): 24 files, no impossibilities.
 
-# 21 files, no impossibilities in 1 directories.
+# 70 files, no impossibilities in 3 directories.
 
 # Implicit Rules
 
-/%.o: %.c
-#  recipe to execute (from 'Makefile', line 25):
+lib//%.o: %.c
+#  recipe to execute (from 'Makefile', line 31):
 	mkdir -p $(@D)
 	$(CC) $(CFLAGS) -MMD -c $< -o $@
 
 # 1 implicit rules, 0 (0.0%) terminal.
 # Files
 
+# Not a target:
+ 
+lib//shell.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+lib//__path.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+lib//check_path.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+lib//strings.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+lib//_memset.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+lib//_memcpy.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+lib//scratch.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
 all,:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
- 
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-10-05 16:03:36.652185301
+#  Last modified 2022-10-06 11:52:08.996073853
 #  File has been updated.
 #  Successfully updated.
+
+# Not a target:
+lib//error.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+lib//check_builtin.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
 
 clean:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 30):
-	$(RM) $(OBJS) $(DEPS) $(TARGET) vgcore*
-	$(RM) -r $(BUILD_DIR)
+#  recipe to execute (from 'Makefile', line 36):
+	$(RM) $(OBJS) $(DEPS) $(TARGET)
 
-re: clean all
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
+# Not a target:
+lib//pid.d:
+#  Implicit rule search has been done.
 #  File does not exist.
-#  File has not been updated.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+lib//tokenize.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+lib//_getline.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+lib//max_pid.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+lib//itoa.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+lib//execute.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
 
 # Not a target:
 .DEFAULT:
@@ -314,30 +418,100 @@ debug,:
 
 all:
 #  Command line target.
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := all
+# automatic
+# * := 
+# automatic
+# < := 
+# automatic
+# + := 
+# automatic
+# % := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
+#  recipe to execute (from 'Makefile', line 23):
+		@echo "Build complete!"
+
+# Not a target:
+lib//env_func.d:
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Failed to be updated.
 
-.PHONY: all, debug, clean clean re
+# Not a target:
+lib//_putchar.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+lib//_environ.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+lib//main.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+lib//builtin_func.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+lib//make_path.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: all, debug, clean clean
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=9/1024=1%, Rehash=0, Collisions=0/31=0%
+# Load=29/1024=3%, Rehash=0, Collisions=2/70=3%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
-# No general ('VPATH' variable) search path.
+# General ('VPATH' variable) search path:
+# src
 
-# strcache buffers: 1 (0) / strings = 33 / storage = 289 B / avg = 8 B
-# current buf: size = 8162 B / used = 289 B / count = 33 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 78 / storage = 852 B / avg = 10 B
+# current buf: size = 8162 B / used = 852 B / count = 78 / avg = 10 B
 
-# strcache performance: lookups = 51 / hit rate = 35%
+# strcache performance: lookups = 116 / hit rate = 32%
 # hash-table stats:
-# Load=33/8192=0%, Rehash=0, Collisions=0/51=0%
-# Finished Make data base on Wed Oct  5 16:28:34 2022
+# Load=78/8192=1%, Rehash=0, Collisions=0/116=0%
+# Finished Make data base on Thu Oct  6 11:53:59 2022
 
  

@@ -38,5 +38,23 @@ void __error(char **args, char *cmd, int code, int n)
 		write(STDERR_FILENO, ": Permission denied\n", 21);
 		exit(0);
 	}
+	if (code == 4)
+	{
+		write(STDERR_FILENO, ": not an identifier\n", 21);
+		exit(2);
+	}
+	if (code == 5)
+	{
+		write(STDERR_FILENO, ": not a valid identifier\n", 26);
+		exit(2);
+	}
+	if (code == 6)
+	{
+		write(STDERR_FILENO, ": Illegal number: ", 18);
+		write(STDERR_FILENO, args[1], _strlen(args[1]));
+		write(STDERR_FILENO, "\n", 1);
+		exit(2);
+	}
+
 
 }
