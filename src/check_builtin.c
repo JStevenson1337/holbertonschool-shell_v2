@@ -8,25 +8,24 @@
  */
 int check_builtin(char **args, char *line)
 {
-	if (_strcmp(args[0], "exit") == 0)
+	int i = 0;
+	builtin_t builtins[] = {
+		{"exit", hsh_exit},
+		{"env", hsh_env},
+		{"setenv", hsh_setenv},
+		{"unsetenv", hsh_unsetenv},
+		{"cd", hsh_cd},
+		{NULL, NULL}
+	};
+	if (args[0] == NULL)
+		return (1);
+	while (builtins[i].name != NULL)
 	{
-		hsh_exit(args, line);
-		return (0);
+		if (_strcmp(args[0], builtins[i].name) == 0)
+		{
+			return ((*builtins[i].f)(args, line));
+		}
+		i++;
 	}
-	else if (_strcmp(args[0], "env") == 0)
-	{
-		print_env();
-		return (0);
-	}
-	else if (_strcmp(args[0], "cd") == 0)
-	{
-		cd(args);
-		return (0);
-	}
-	else if (_strcmp(args[0], "clear") == 0)
-	{
-		clear_screen();
-		return (0);
-	}
-	return (1);
+	return (0);
 }

@@ -9,25 +9,19 @@
 
 char *check_path(path_t *head, char *command)
 {
-	path_t *temp;
-	char *filename;
+	char *path = NULL;
+	char *temp = NULL;
 	struct stat st;
 
-	if (!command || !head)
-		return (NULL);
-
-	temp = head;
-	while (temp)
+	while (head)
 	{
-		filename = path_concat(temp->dir, command);
-		if (!filename)
-			return (NULL);
-		if (stat(filename, &st) == 0)
+		path = _strcat(head->path, "/");
+		temp = _strcat(path, command);
+		if (stat(temp, &st) == 0)
 		{
-			return (filename);
+			return (temp);
 		}
-		free(filename);
-		temp = temp->next;
+		head = head->next;
 	}
 	return (NULL);
 }

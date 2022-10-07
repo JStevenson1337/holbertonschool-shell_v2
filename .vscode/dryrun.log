@@ -1,5 +1,5 @@
-make --dry-run --keep-going --print-directory
+make all, --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/jeremy/Projects/Holberton/holbertonschool-shell_v2'
-echo "Build complete!"
+make: Nothing to be done for 'all,'.
 make: Leaving directory '/home/jeremy/Projects/Holberton/holbertonschool-shell_v2'
  

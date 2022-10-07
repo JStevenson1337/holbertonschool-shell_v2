@@ -15,30 +15,50 @@ int main(int argc, char **argv, char **env)
 	(void)argc;
 	(void)argv;
 	(void)env;
+
 	while (status)
 	{
-		if (argc > 1)
-			__error(args, argv[0], 2, 0);
-		/* print prompt */
-		prompter();
-
-		if(line)
-			free(line);
 		line = read_line();
-		if (line[0] == '\n')
-		{
-			free(line);
-			continue;
-		}
-		args = tokenize(line, DELIM);
-		if (check_builtin(args, line) == 1)
-			status = execute(args, argv[0], 0);
-		if (line)
-			free(line);
-		if (args)
-			free(args);
+		args = *parse_line(line);
+		status = check_builtin(args, line);
+		free(line);
+		free(args);
 	}
-	free(args), free(line);
+	return (0);
+}
+	// if (!hsh)
+	// 	return (1);
+	
+	// while (status)
+	// {
+	// 	if (argc > 1)
+	// 		__error(args, argv[0], 2, 0);
+	// 	/* print prompt */
+	// 	prompter();
+
+	// 	/* read line */
+	// 	line = read_line();
+	// 	if (line == NULL)
+	// 		continue;
+	// 	/* parse line */
+	// 	args = parse_line(line);
+	// 	if (args == NULL)
+	// 		continue;
+	// 	/* check if builtin */
+	// 	status = check_builtin(args, line);
+	// 	if (status == 1)
+	// 		continue;
+	// 	/* execute */
+	// 	status = execute(args, line, hsh);
+	// 	if (status == 1)
+	// 		continue;
+
+	// 	/* free memory */
+	// 	free(line);
+	// 	free(args);
+	// }
+
+
 	return (0);
 }
 

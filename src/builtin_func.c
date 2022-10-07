@@ -9,25 +9,8 @@
  */
 void hsh_exit(char **args, char *line)
 {
-	unsigned int i = 0;
-
-	if (!line)
-		free(line);
-	if (!args)
-		free(args);
-	if (args)
-	{
-		while (args[i])
-		{
-			free(args[i]);
-			i++;
-		}
-		free(args);
-	}
-	free(line);
-	free_path(main_path);
-	free_path(env);
-
+	(void)args;
+	(void)line;
 	exit(0);
 }
 /**
@@ -36,14 +19,13 @@ void hsh_exit(char **args, char *line)
  */
 void print_env(void)
 {
-	path_t *temp;
+	int i = 0;
 
-	temp = env;
-	while (temp)
+	while (env[i])
 	{
-		write(1, temp->dir, _strlen(temp->dir));
-		write(1, "\n", 1);
-		temp = temp->next;
+		_puts(env[i]);
+		_puts("\n");
+		i++;
 	}
 }
 /**

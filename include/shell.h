@@ -26,8 +26,7 @@
 
 #define COMMAND_GET_MAXIMUM_CMD_SIZE	(4096*4096)
 
-#define ENV_BUFFER_SIZE 1024
-#define LINE_BUFFER_SIZE 4096
+#define BUFFER 1024
 
 
 /* Path Structure */
@@ -94,7 +93,7 @@ typedef struct hsh_h
 } hsh_t;
 
 extern hsh_t *shell;
-
+extern char **environ;
 
 
 #define OK 1
@@ -115,6 +114,8 @@ char *read_descriptor(fd_t *desc);
 char *_getline(const int fd);
 /* END GETLINE */
 
+
+int parse_line(char *line);
 
 char *_strcpy(char *dest, char *src);
 int _strlen(char *s);
