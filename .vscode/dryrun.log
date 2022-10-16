@@ -1,5 +1,12 @@
 make all, --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/jeremy/Projects/Holberton/holbertonschool-shell_v2'
+<<<<<<< HEAD
 make: Nothing to be done for 'all,'.
 make: Leaving directory '/home/jeremy/Projects/Holberton/holbertonschool-shell_v2'
  
+=======
+make: Leaving directory '/home/jeremy/Projects/Holberton/holbertonschool-shell_v2'
+ 
+Makefile:13: *** missing separator.  Stop.
+
+>>>>>>> b8270ff (save before fork)
