@@ -1,27 +1,6 @@
 make --dry-run --keep-going --print-directory
 make: Entering directory '/home/jeremy/Projects/Holberton/holbertonschool-shell_v2'
-gcc -Wall -Werror -Wextra -pedantic   -c -o _environ.o _environ.c
-gcc -Wall -Werror -Wextra -pedantic   -c -o builtin_func.o builtin_func.c
-gcc -Wall -Werror -Wextra -pedantic   -c -o check_builtin.o check_builtin.c
-gcc -Wall -Werror -Wextra -pedantic   -c -o check_path.o check_path.c
-gcc -Wall -Werror -Wextra -pedantic   -c -o env_func.o env_func.c
-gcc -Wall -Werror -Wextra -pedantic   -c -o error.o error.c
-gcc -Wall -Werror -Wextra -pedantic   -c -o execute.o execute.c
-gcc -Wall -Werror -Wextra -pedantic   -c -o hsh.o hsh.c
-gcc -Wall -Werror -Wextra -pedantic   -c -o itoa.o itoa.c
-gcc -Wall -Werror -Wextra -pedantic   -c -o make_path.o make_path.c
-gcc -Wall -Werror -Wextra -pedantic   -c -o shell.o shell.c
-gcc -Wall -Werror -Wextra -pedantic   -c -o strings.o strings.c
-gcc -Wall -Werror -Wextra -pedantic   -c -o tokenize.o tokenize.c
-gcc -Wall -Werror -Wextra -pedantic -o hsh _environ.o builtin_func.o check_builtin.o check_path.o env_func.o error.o execute.o hsh.o itoa.o make_path.o shell.o strings.o tokenize.o
 make: Leaving directory '/home/jeremy/Projects/Holberton/holbertonschool-shell_v2'
  
-Makefile:51: warning: overriding recipe for target 'oclean'
-Makefile:42: warning: ignoring old recipe for target 'oclean'
-Makefile:54: warning: overriding recipe for target 'clean'
-Makefile:48: warning: ignoring old recipe for target 'clean'
-Makefile:62: warning: overriding recipe for target 'oclean'
-Makefile:51: warning: ignoring old recipe for target 'oclean'
-Makefile:65: warning: overriding recipe for target 'clean'
-Makefile:54: warning: ignoring old recipe for target 'clean'
+Makefile:13: *** missing separator.  Stop.
 

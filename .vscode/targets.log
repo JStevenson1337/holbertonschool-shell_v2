@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+Makefile:13: *** missing separator.  Stop.
+
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -6,22 +8,24 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Sep 21 19:25:21 2022
+# Make data base, printed on Sun Oct 16 17:40:43 2022
 
 # Variables
 
 # environment
+TMUX_PANE = %0
+# environment
 GDK_BACKEND = x11
 # environment
 LC_ALL = C
-# environment
-NO_AT_BRIDGE = 1
 # environment
 GNOME_SHELL_SESSION_MODE = pop
 # environment
 SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
 TERMINATOR_DBUS_NAME = net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f
+# makefile (from 'Makefile', line 2)
+VPATH = src
 # environment
 MANDATORY_PATH = /usr/share/gconf/pop.mandatory.path
 # environment
@@ -29,7 +33,7 @@ VSCODE_CWD = /home/jeremy/Projects/Holberton/holbertonschool-shell_v2
 # environment
 WINDOWPATH = 2
 # environment
-TERMINATOR_UUID = urn:uuid:75088ac4-588d-498d-a4e9-dcb53c459f88
+TERMINATOR_UUID = urn:uuid:013b70de-9f86-411b-a720-321fd871c7d9
 # environment
 LIBVIRT_DEFAULT_URI = qemu:///system
 # default
@@ -38,8 +42,8 @@ MAKE_COMMAND := make
 QT_ACCESSIBILITY = 1
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
-# makefile (from 'Makefile', line 17)
-CSRCS = $(wildcard *.c)
+# environment
+CLOUDSDK_METRICS_ENVIRONMENT_VERSION = 1.20.3
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -51,9 +55,7 @@ PWD = /home/jeremy/Projects/Holberton/holbertonschool-shell_v2
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
-XDG_DATA_DIRS = /usr/share/pop:/usr/share/gnome:/home/jeremy/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/
-# environment
-OLDPWD = /home/jeremy/Projects/Holberton
+XDG_DATA_DIRS = /usr/share/pop:/usr/share/gnome:/home/jeremy/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # automatic
@@ -83,17 +85,15 @@ ZSH_TMUX_TERM = screen-256color
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_AUTH_SOCK = /tmp/ssh-XXXXXXdXZ9iA/agent.140870
+SSH_AUTH_SOCK = /tmp/ssh-XXXXXXmw4v0r/agent.6559
 # default
 .SHELLFLAGS := -c
 # environment
-_ZSH_TMUX_FIXED_CONFIG = /home/jeremy/.oh-my-zsh/plugins/tmux/tmux.extra.conf
+_ZSH_TMUX_FIXED_CONFIG = /home/jeremy/.oh-my-zsh/plugins/tmux/tmux.only.conf
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-pop:/etc/xdg
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
-# makefile (from 'Makefile', line 34)
-DBGCFLAGS = -g -O0 -DDEBUG -Wall -Werror -Wextra -pedantic
 # environment
 XDG_SESSION_DESKTOP = pop
 # makefile (from 'Makefile', line 1)
@@ -103,19 +103,19 @@ MAKEFILE_LIST := Makefile
 # environment
 ZSH = /home/jeremy/.oh-my-zsh
 # environment
-VSCODE_PID = 377749
+VSCODE_PID = 9127
 # environment
 XDG_SESSION_TYPE = x11
+# environment
+TMUX = /tmp/tmux-1000/default,8860,0
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/parallax:@/tmp/.ICE-unix/3153,unix/parallax:/tmp/.ICE-unix/3153
+SESSION_MANAGER = local/blitzar:@/tmp/.ICE-unix/3754,unix/blitzar:/tmp/.ICE-unix/3754
 # environment
 MARKPATH = /home/jeremy/.marks
 # automatic
 *F = $(notdir $*)
-# makefile (from 'Makefile', line 18)
-OBJSDIR = ./build/
 # environment
 ANT_ARGS = -logger org.apache.tools.ant.listener.AnsiColorLogger
 # environment
@@ -130,8 +130,8 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
-# makefile (from 'Makefile', line 19)
-OBJS = $(CSRCS:.c=.o)
+# makefile (from 'Makefile', line 12)
+OBJS = $(SRCS:%.c=$(BUILD_DIR)/%.o)
 # environment
 GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 # makefile
@@ -141,23 +141,23 @@ MAKECMDGOALS := all
 # environment
 XMODIFIERS = @im=ibus
 # environment
-SHLVL = 1
+SHLVL = 2
 # environment
 MAKELEVEL := 0
-# environment
-ZSH_TMUX_CONFIG = /home/jeremy/.tmux.conf
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jeremy/.local/bin
+PATH = /home/jeremy/.cache/cloud-code/installer/google-cloud-sdk/bin:/home/jeremy/.cargo/bin:/home/jeremy/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/jeremy/.local/bin:/home/jeremy/.local/bin:/home/jeremy/google-cloud-sdk/bin
 # default
 MAKEFILES := 
 # automatic
 ^F = $(notdir $^)
 # environment
-INVOCATION_ID = 3eee0e23712d416a8756e1dc170f7c5b
+INVOCATION_ID = fb24ad7284be46b0aebd60e32da519b7
 # environment
 USERNAME = jeremy
+# environment
+TERM_PROGRAM = tmux
 # automatic
 ?F = $(notdir $?)
 # environment
@@ -174,16 +174,14 @@ LESS = -R
 DESKTOP_SESSION = pop
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = pop:GNOME
-# 'override' directive
+# environment
 GNUMAKEFLAGS := 
 # environment
 LOGNAME = jeremy
 # makefile
-.DEFAULT_GOAL := hsh
+.DEFAULT_GOAL := 
 # environment
-SYSTEMD_EXEC_PID = 3385
-# makefile (from 'Makefile', line 21)
-RM = rm -f
+SYSTEMD_EXEC_PID = 4006
 # environment
 DISPLAY = :1
 # environment
@@ -194,28 +192,28 @@ GTK_MODULES = gail:atk-bridge:appmenu-gtk-module
 DEFAULTS_PATH = /usr/share/gconf/pop.default.path
 # default
 MAKE_VERSION := 4.3
-# makefile (from 'Makefile', line 15)
-LDFLAGS = -lm
 # environment
-MANAGERPID = 2943
+MANAGERPID = 3461
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 350838
+NODE_TLS_REJECT_UNAUTHORIZED = 0
 # environment
-SSH_AGENT_PID = 140872
+GIO_LAUNCHED_DESKTOP_FILE_PID = 6486
+# environment
+SSH_AGENT_PID = 6561
 # environment
 PAGER = less
 # environment
 _ = /usr/bin/code
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
-# makefile (from 'Makefile', line 10)
+# makefile (from 'Makefile', line 7)
 CFLAGS = -Wall -Werror -Wextra -pedantic
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 COLORTERM = truecolor
 # environment
-JOURNAL_STREAM = 8:53005
+JOURNAL_STREAM = 8:51649
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -229,33 +227,33 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 VSCODE_IPC_HOOK = /run/user/1000/vscode-13c5c0cd-1.71.2-main.sock
 # environment
-TERM = xterm-256color
+TERM = screen-256color
 # default
 .RECIPEPREFIX := 
 # automatic
 <F = $(notdir $<)
-# makefile (from 'Makefile', line 16)
-DEPS = shell.h
 # default
 SUFFIXES := 
-# makefile (from 'Makefile', line 20)
-TARGET = hsh
 # environment
 VSCODE_CLI = 1
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
 VTE_VERSION = 6800
+# environment
+CLOUDSDK_METRICS_ENVIRONMENT = cloudcode.vscode
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
-# makefile (from 'Makefile', line 9)
+# makefile (from 'Makefile', line 6)
 CC = gcc
 # environment
 XDG_MENU_PREFIX = gnome-
 # environment
+TERM_PROGRAM_VERSION = 3.2a
+# environment
 GDMSESSION = pop
 # variable set hash-table stats:
-# Load=122/1024=12%, Rehash=0, Collisions=9/157=6%
+# Load=120/1024=12%, Rehash=0, Collisions=8/133=6%
 
 # Pattern-specific Variable Values
 
@@ -263,9 +261,9 @@ GDMSESSION = pop
 
 # Directories
 
-# . (device 2049, inode 19661714): 26 files, no impossibilities.
+# . (device 64769, inode 9307265): 28 files, no impossibilities.
 
-# 26 files, no impossibilities in 1 directories.
+# 28 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -273,112 +271,21 @@ GDMSESSION = pop
 
 # Files
 
-hsh: _environ.o builtin_func.o check_builtin.o check_path.o env_func.o error.o execute.o hsh.o itoa.o make_path.o shell.o strings.o tokenize.o
-#  Implicit rule search has not been done.
-#  Last modified 2022-09-21 03:23:49.772937111
-#  File has not been updated.
- 
-Makefile:51: warning: overriding recipe for target 'oclean'
-Makefile:42: warning: ignoring old recipe for target 'oclean'
-Makefile:54: warning: overriding recipe for target 'clean'
-Makefile:48: warning: ignoring old recipe for target 'clean'
-Makefile:62: warning: overriding recipe for target 'oclean'
-Makefile:51: warning: ignoring old recipe for target 'oclean'
-Makefile:65: warning: overriding recipe for target 'clean'
-Makefile:54: warning: ignoring old recipe for target 'clean'
-make: *** No rule to make target '_environ.o', needed by 'hsh'.  Stop.
-
-#  recipe to execute (from 'Makefile', line 24):
- 
-	${CC} ${CFLAGS} -o ${TARGET} ${OBJS}
- 
-
- 
+# Not a target:
 all,:
- 
-#  Phony target (prerequisite of .PHONY).
- 
-#  Implicit rule search has not been done.
- 
-#  File does not exist.
- 
-#  File has not been updated.
- 
-
-debug:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 36):
-	gcc ${DBGCFLAGS} ${FLAGS} -o ${TARGET} ${CSRCS} ${DEPS}
 
 # Not a target:
+ 
 Makefile:
-#  Implicit rule search has been done.
-#  Last modified 2022-09-21 03:23:49.772937111
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
- 
-execute.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
+# Not a target:
 clean:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 65):
-	$(RM) *~ $(NAME)
-
-# Not a target:
-error.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-env_func.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-re: oclean all
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-_environ.o:
-#  Implicit rule search has been done.
-#  File does not exist.
-#  File has not been updated.
-
-oclean:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 62):
-	$(RM) $(OBJ)
-
-# Not a target:
-hsh.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-make_path.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
- 
-#  File has not been updated.
-
-# Not a target:
-check_builtin.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -389,50 +296,15 @@ check_builtin.o:
 #  Modification time never checked.
 #  File has not been updated.
 
+# Not a target:
 debug,:
-#  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
-#  File does not exist.
+#  Modification time never checked.
 #  File has not been updated.
- 
 
-all: hsh
+# Not a target:
+all:
 #  Command line target.
-#  Implicit rule search has not been done.
-#  File does not exist.
- 
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 57):
-	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
-
-fclean: oclean clean
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
- 
-tokenize.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-shell.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
- 
-# Not a target:
-builtin_func.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
- 
-check_path.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -442,37 +314,21 @@ check_path.o:
 #  Modification time never checked.
 #  File has not been updated.
 
-# Not a target:
-strings.o:
- 
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-itoa.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
 # files hash-table stats:
- 
-# Load=26/1024=3%, Rehash=0, Collisions=1/64=2%
+# Load=8/1024=1%, Rehash=0, Collisions=0/12=0%
 # VPATH Search Paths
 
- 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
- 
 
-# strcache buffers: 1 (0) / strings = 52 / storage = 486 B / avg = 9 B
-# current buf: size = 8162 B / used = 486 B / count = 52 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 37 / storage = 337 B / avg = 9 B
+# current buf: size = 8162 B / used = 337 B / count = 37 / avg = 9 B
 
- 
-# strcache performance: lookups = 82 / hit rate = 36%
+# strcache performance: lookups = 42 / hit rate = 11%
 # hash-table stats:
-# Load=52/8192=1%, Rehash=0, Collisions=0/82=0%
-# Finished Make data base on Wed Sep 21 19:25:21 2022
+ 
+# Load=37/8192=0%, Rehash=0, Collisions=0/42=0%
+# Finished Make data base on Sun Oct 16 17:40:43 2022
 
  

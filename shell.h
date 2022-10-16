@@ -29,6 +29,16 @@ extern char **environ;
 path_t *main_path;
 path_t *env;
 
+typedef struct
+{
+	uint type;
+	char name[32];
+	float size;
+} MyStruct_t;
+
+offset = (uint)(&((MyStruct_t *)NULL)->size);
+
+
 char *_strcpy(char *dest, char *src);
 int _strlen(char *s);
 char *_strdup(char *str);
